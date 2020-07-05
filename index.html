@@ -3,90 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joseph's Personal Site</title>
+    <script src="https://use.fontawesome.com/aac2b9d990.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="./img/logo.png" />
+    <title>Joseph Diza</title>
   </head>
   <body>
-    <table>
-      <tr>
-        <td>
-          <img
-            src="img/seph.jpg"
-            alt="joseph's profile picture"
-            width="200"
-            height="200"
-          />
-        </td>
-        <td>
-          <h1>Joseph Diza</h1>
-          <p>
-            <em
-              >Computer Engineering student at
-              <a href="https://www.pup.edu.ph"
-                ><em>Polytechnic University of the Philippines</em></a
-              >
-            </em>
-          </p>
-          <p>
-            I am a Computer Engineering and currently studying web development
-            for me to land on a web development job someday.
-          </p>
-        </td>
-      </tr>
-    </table>
+    <nav id="navbar">
+      <a href="#" id="logo">
+        <img src="./img/logo.svg" alt="logo-img" id="logo-img" />
+        <h4>/josephdiza</h4>
+      </a>
+      <ul>
+        <a href="#welcome-section"><li id="nav-links">about</li></a>
+        <a href="#projects"><li id="nav-links">projects</li></a>
+        <a href="#footer"><li id="nav-links">contact me</li></a>
+      </ul>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+    </nav>
+    <section id="welcome-section">
+      <div class="prof-pic-container">
+        <img
+          src="https://pbs.twimg.com/profile_images/1278314824007430144/9NzkaoqV_400x400.jpg"
+          alt=""
+          class="prof-pic welsec-elem"
+        />
+      </div>
 
-    <hr />
-    <h3>Education</h3>
-    <ul>
-      <li>Polytechnic University of the Philippines</li>
-      <li>Fortune High School</li>
-      <li>Fortune Elementary School</li>
-    </ul>
-    <hr />
-    <h3>Hobbies</h3>
-    <ol>
-      <li>Coding</li>
-      <li>Playing basketball</li>
-      <li>Playing online games</li>
-    </ol>
-    <hr />
-    <h3>Skills</h3>
-    <table>
-      <tr>
-        <td>
-          <table cellspacing="10px">
-            <tr>
-              <td>HTML5</td>
-              <td>★★☆☆☆</td>
-            </tr>
-            <tr>
-              <td>CSS3</td>
-              <td>★★☆☆☆</td>
-            </tr>
-            <tr>
-              <td>Javascript</td>
-              <td>★☆☆☆☆</td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table cellspacing="10px">
-            <tr>
-              <td>Python</td>
-              <td>★☆☆☆☆</td>
-            </tr>
-            <tr>
-              <td>Java</td>
-              <td>★☆☆☆☆</td>
-            </tr>
-            <tr>
-              <td>Design</td>
-              <td>★☆☆☆☆</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <hr />
-    <h3><a href="/contact.html">Contact Me</a></h3>
+      <h1 class="">I'm Joseph Diza</h1>
+      <p class="">self taught web developer.</p>
+    </section>
+    <section id="projects">
+      <h2>Here are some of my works.</h2>
+      <div class="proj-container">
+        <div class="project-tile">
+          <a href="https://codepen.io/sephdiza/full/yLeXpMg" target="_blank"
+            ><img class="project-pic" src="./img/usap.png" alt=""
+          /></a>
+          <h2 class="proj-title">Landing Page</h2>
+        </div>
+        <div class="project-tile">
+          <a href="https://codepen.io/sephdiza/pen/KKVXwEg" target="_blank"
+            ><img class="project-pic" src="./img/techdoc.png" alt=""
+          /></a>
+          <h2 class="proj-title">JS Technical Documentation</h2>
+        </div>
+      </div>
+      <a href="https://codepen.io/sephdiza" id="profile-link" target="_blank"
+        ><i class="fa fa-codepen" aria-hidden="true"></i> See more on codepen</a
+      >
+    </section>
+    <footer id="footer">
+      <p>
+        "<strong
+          >Life is like riding a bicycle.<br />
+          To keep your balance, you must keep moving." <br
+        /></strong>
+        <em>-- AlbertEinstein</em>
+      </p>
+      <div class="social">
+        <a href="#"><i class="fa fa-github soc" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-linkedin soc" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter soc" aria-hidden="true"></i></a>
+        <a href="http://www.facebook.com/sephdiza" target="_blank"
+          ><i class="fa fa-facebook soc" aria-hidden="true"></i
+        ></a>
+        <a href="mailto:sephdiza@gmail.com"
+          ><i class="fa fa-envelope soc" aria-hidden="true"></i
+        ></a>
+        <p class="createdfor">
+          &copy; Created for
+          <a
+            href="https://www.freecodecamp.org/fcc3dd010f0-547b-453a-9bb6-a9c862f7ded0"
+            target="_blank"
+            ><span class="freecodecamp">freeCodeCamp</span>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i
+          ></a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
