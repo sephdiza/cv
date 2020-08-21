@@ -25,7 +25,7 @@ h4 {
   box-shadow: 2px 2px 2px #e4f9f5;
   position: fixed;
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   top: 0;
   z-index: 1000;
 }
@@ -41,7 +41,7 @@ h4 {
   font-family: monospace;
 }
 
-ul {
+.nav-list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -60,7 +60,7 @@ li {
   border-radius: 0.5em;
 }
 
-#navbar ul > a:hover {
+.nav-list > a:hover {
   background-color: #11999e;
   transition: ease-in 200ms;
 }
@@ -69,9 +69,8 @@ li {
   position: absolute;
   z-index: 3;
   right: 35px;
-  top: 35px;
+  top: 22px;
   cursor: pointer;
-  visibility: hidden;
 }
 
 .menu-btn .btn-line {
@@ -80,6 +79,7 @@ li {
   margin: 0 0 5px 0;
   background: #fff;
   visibility: hidden;
+  transition: 0.2s ease-in;
 }
 
 #logo-img {
@@ -106,7 +106,7 @@ section {
 #welcome-section h1 {
   margin-top: 1em;
   padding: 0.5em;
-  font-size: 4em;
+  font-size: 3em;
   color: #40514e;
 }
 
@@ -115,21 +115,11 @@ section {
 }
 
 .prof-pic {
-  width: 15em;
-  height: 15em;
+  width: 400px;
+  height: 400px;
   max-width: 100%;
   max-height: auto;
   border-radius: 100%;
-}
-
-.prof-pic-container {
-  border-radius: 100%;
-  overflow: hidden;
-}
-
-.prof-pic:hover {
-  transform: scale(1.2, 1.2);
-  transition: linear 500ms;
 }
 
 #projects {
@@ -241,12 +231,28 @@ footer p {
 }
 
 @media screen and (max-width: 880px) {
+  .menu-btn {
+    visibility: visible;
+  }
+
   .menu-btn .btn-line {
     visibility: visible;
   }
 
-  #navbar ul {
-    visibility: hidden;
+  .nav-list {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    background-color: #40514e;
+    padding: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
   }
 
   .proj-container {
@@ -254,4 +260,32 @@ footer p {
     height: auto;
     margin: 4em;
   }
+
+  .prof-pic {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .social-icons {
+    display: flex;
+    padding-top: 1em;
+  }
+}
+
+.active {
+  transform: translateX(0);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 7px);
+}
+
+.toggle .line2 {
+  visibility: hidden;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
 }
